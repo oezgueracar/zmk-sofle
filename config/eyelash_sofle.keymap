@@ -86,7 +86,7 @@
 &trans             &trans        &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &mkp LCLK        &trans  &trans           &trans           &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
-            sensor-bindings = <&inc_dec_rgb_brightness>;
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
