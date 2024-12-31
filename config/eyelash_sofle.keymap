@@ -53,11 +53,11 @@
 
         layer0 {
             bindings = <
-&kp ESC         &kp N1        &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6         &kp N7     &kp N8     &kp N9           &kp N0      &kp MINUS
-&kp TAB         &kp Q         &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O            &kp P       &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LCTRL       &kp Z         &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE      &kp CAPSLOCK  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp PRINTSCREEN  &kp BACKSPACE  &kp SPACE  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC         &kp N1        &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6         &kp N7     &kp N8     &kp N9           &kp N0            &kp MINUS
+&kp TAB         &kp Q         &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O            &kp P             &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L            &kp SEMI          &kp APOS
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT          &kp FSLH          &kp ENTER
+&kp C_MUTE      &kp CAPSLOCK  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1     &kp PRINTSCREEN  &kp BACKSPACE  &kp SPACE  &mo 2      &kp RIGHT_SHIFT  &kp LC(LEFT_ALT)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -66,11 +66,11 @@
 
         layer_1 {
             bindings = <
-&kp F1      &kp F2           &kp F3           &kp F4           &kp F5           &kp F6             &kp PAGE_UP    &kp F7     &kp F8    &kp F9           &kp F10    &kp F11     &kp F12
-&kp F1      &kp F2           &kp F3           &kp F4           &kp F5           &kp F6             &kp PAGE_DOWN  &kp GRAVE  &trans    &kp UP           &trans     &trans      &kp EQUAL
-&mkp MB5    &mkp MB4         &mkp LCLK        &mkp MCLK        &mkp RCLK        &trans             &kp HOME       &trans     &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp END        &kp NUBS   &trans    &trans           &trans     &trans      &kp BACKSLASH
-&kp C_MUTE  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT       &kp DELETE       &trans             &kp ENTER      &trans     &trans    &kp PRINTSCREEN  &trans     &kp INSERT
+&kp F1      &kp F2     &kp F3     &kp F4      &kp F5      &kp F6        &kp PAGE_UP    &kp F7     &kp F8    &kp F9           &kp F10    &kp F11     &kp F12
+&kp F1      &kp F2     &kp F3     &kp F4      &kp F5      &kp F6        &kp PAGE_DOWN  &kp GRAVE  &trans    &kp UP           &trans     &trans      &kp EQUAL
+&mkp MB5    &mkp MB4   &mkp LCLK  &mkp MCLK   &mkp RCLK   &trans        &kp HOME       &trans     &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp RIGHT_BRACKET
+&trans      &trans     &trans     &trans      &trans      &kp LA(F4)    &kp END        &kp NUBS   &trans    &trans           &trans     &trans      &kp BACKSLASH
+&kp C_MUTE  &kp LC(C)  &kp LC(V)  &kp INSERT  &kp DELETE  &trans        &kp ENTER      &trans     &trans    &kp PRINTSCREEN  &trans     &kp INSERT
             >;
 
             display-name = "layer1";
@@ -79,14 +79,14 @@
 
         layer_2 {
             bindings = <
-&bootloader        &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_UP     &trans  &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &bootloader
-&sys_reset         &bt BT_CLR    &bt BT_CLR_ALL   &trans           &trans           &trans          &mmv MOVE_DOWN   &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sys_reset
-&ext_power EP_TOG  &out OUT_USB  &out OUT_BLE     &trans           &trans           &trans          &mmv MOVE_LEFT   &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &trans
-&soft_off          &trans        &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans          &mmv MOVE_RIGHT  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &soft_off
-&trans             &trans        &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans           &trans          &mkp LCLK        &trans  &trans           &trans           &kp KP_NUMBER_0  &kp KP_DOT
+&bootloader        &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP     &trans  &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &bootloader
+&sys_reset         &bt BT_CLR    &bt BT_CLR_ALL   &trans           &trans           &trans             &mmv MOVE_DOWN   &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &sys_reset
+&ext_power EP_TOG  &out OUT_USB  &out OUT_BLE     &trans           &trans           &trans             &mmv MOVE_LEFT   &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER  &trans
+&soft_off          &trans        &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans             &mmv MOVE_RIGHT  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &soft_off
+&trans             &trans        &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &mkp LCLK        &trans  &trans           &trans           &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_rgb_brightness>;
         };
     };
 };
