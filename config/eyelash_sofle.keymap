@@ -67,9 +67,9 @@
         layer_1 {
             bindings = <
 &kp F1      &kp F2     &kp F3     &kp F4      &kp F5      &kp F6        &kp PAGE_UP    &kp F7     &kp F8    &kp F9           &kp F10    &kp F11     &kp F12
-&kp F1      &kp F2     &kp F3     &kp F4      &kp F5      &kp F6        &kp PAGE_DOWN  &kp GRAVE  &trans    &kp UP           &trans     &trans      &kp EQUAL
-&mkp MB5    &mkp MB4   &mkp LCLK  &mkp MCLK   &mkp RCLK   &trans        &kp HOME       &trans     &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp RIGHT_BRACKET
-&trans      &trans     &trans     &trans      &trans      &kp LA(F4)    &kp END        &kp NUBS   &trans    &trans           &trans     &trans      &kp BACKSLASH
+&kp F1      &kp F2     &kp F3     &kp F4      &kp F5      &kp F6        &kp PAGE_DOWN  &kp GRAVE  &trans    &kp UP           &trans     &trans      &kp RIGHT_BRACKET
+&mkp MB5    &mkp MB4   &mkp LCLK  &mkp MCLK   &mkp RCLK   &trans        &kp HOME       &trans     &kp LEFT  &kp DOWN         &kp RIGHT  &trans      &kp BACKSLASH
+&trans      &trans     &trans     &trans      &trans      &kp LA(F4)    &kp END        &kp NUBS   &trans    &trans           &trans     &trans      &kp EQUAL
 &kp C_MUTE  &kp LC(C)  &kp LC(V)  &kp INSERT  &kp DELETE  &trans        &kp ENTER      &trans     &trans    &kp PRINTSCREEN  &trans     &kp INSERT
             >;
 
